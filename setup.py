@@ -9,4 +9,5 @@ setup(name="django-dont-vary-on",
       packages=['django_dont_vary_on'],
       license = 'GPLv3',
       description = "Library for Django to give you more control over Django's caching, and improving you cache hits and performance",
+      requires = [ 'django' ],
 )
