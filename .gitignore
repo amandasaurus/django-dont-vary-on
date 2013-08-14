@@ -1,0 +1,4 @@
+.*.swp
+*.pyc
+dist/*
+django_dont_vary_on.egg-info/*
