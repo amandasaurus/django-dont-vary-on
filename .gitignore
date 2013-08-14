@@ -1,4 +1,6 @@
 .*.swp
 *.pyc
+dist/
 dist/*
+django_dont_vary_on.egg-info/
 django_dont_vary_on.egg-info/*
