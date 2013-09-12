@@ -58,6 +58,8 @@ def remove_vary_headers(response, headers_to_remove):
         else:
             # this existing header should not be included
             pass
-
-    response['Vary'] = ', '.join(new_headers)
+    if len(new_headers) > 0:
+        response['Vary'] = ', '.join(new_headers)
+    else:
+        del response['Vary'] # Remove header so that we're not left with blank header
 
