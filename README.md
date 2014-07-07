@@ -88,3 +88,7 @@ Caveats
 =======
 
 Sending an incorrect cached page can be very embarassing. People might be able to see other people's logged in and personal details. Ensure you know what you're doing.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/rory/django-dont-vary-on/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
