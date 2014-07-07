@@ -3,7 +3,7 @@
 from setuptools import setup
 
 setup(name="django-dont-vary-on",
-      version="0.1",
+      version="1.0.0",
       author="Rory McCann",
       author_email="rory@technomancy.org",
       packages=['django_dont_vary_on'],
