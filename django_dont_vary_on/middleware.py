@@ -1,10 +1,16 @@
 # encoding: utf-8
 import re
 
+try:
+    from django.utils.deprecation import MiddlewareMixin
+except ImportError:
+    class MiddlewareMixin(object):
+        pass
+
 cc_delim_re = re.compile(r'\s*,\s*')
 
 
-class RemoveUnneededVaryHeadersMiddleware(object):
+class RemoveUnneededVaryHeadersMiddleware(MiddlewareMixin):
     """
     Middleware that modifies the Vary header to optionally remove some values
     from the Vary header.
@@ -62,4 +68,3 @@ def remove_vary_headers(response, headers_to_remove):
         response['Vary'] = ', '.join(new_headers)
     else:
         del response['Vary'] # Remove header so that we're not left with blank header
-
